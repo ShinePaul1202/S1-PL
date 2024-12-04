@@ -1,6 +1,12 @@
 n = int(input("Enter an integer: "))
 
-# Calculate the result
-sum = n + int(str(n) * 2) + int(str(n) * 3)
+# Calculate the terms
+nn = int(str(n) * 2)
+nnn = int(str(n) * 3)
 
-print(f"sum: {sum}")
+# Calculate the result
+result = n + nn + nnn
+
+# Print the formula and result
+print(f"The formula is: {n} + {nn} + {nnn}")
+print(f"The computed result is: {result}")
