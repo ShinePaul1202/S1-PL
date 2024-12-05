@@ -17,7 +17,7 @@ def add_integers(*args):
     return sum(args)
 
 result = add_integers(1, 2, 3)
-print("Sum of numbers:", result)  # Output: 6
+print("Sum of numbers:", result)  
 
 result = add_integers(5, 10, 15, 20)
-print("Sum of numbers:", result)  # Output: 50
+print("Sum of numbers:", result)  
