@@ -1,19 +1,6 @@
-def factorial(num):
-    if num == 0 or num == 1:
-        return 1
-    else:
-        result = 1
-        for i in range(2, num + 1):
-            result *= i
-        return result
+user_input = input("Enter a list of numbers separated by spaces: ")
+numbers = list(map(int, user_input.split()))
 
-def sum_series(n):
-    series_sum = 0
-    for i in range(1, n + 1):
-        term = (i ** i) / factorial(i)
-        series_sum += term
-    return series_sum
+multiples_of_3 = list(filter(lambda x: x % 3 == 0, numbers))
 
-n = int(input("Enter the number of terms: "))
-
-print(f"The sum of the series up to {n} terms is: {sum_series(n)}")
+print("Multiples of 3:", multiples_of_3)
