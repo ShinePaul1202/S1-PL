@@ -1,9 +1,21 @@
-def compare(S1, S2, n):
-    return S1[:n] == S2[:n]
+def factorial(num):
+    if num == 0 or num == 1:
+        return 1
+    else:
+        result = 1
+        for i in range(2, num + 1):
+            result *= i
+        return result
 
-S1 = input("Enter the first string: ")
-S2 = input("Enter the second string: ")
-n = int(input("Enter the number of characters to compare: "))
+def sum_series(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += (i ** i) / factorial(i)  # n^n / n!
+    return total
 
-result = compare(S1, S2, n)
-print("Result:", result)
+n = int(input("Enter the value of n: "))
+
+result = sum_series(n)
+
+print(f"The sum of the series up to {n} terms is: {result}")
+
