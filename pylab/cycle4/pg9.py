@@ -1,23 +1,16 @@
 def add_integers(*args):
     """
-    This function takes a variable number of integer arguments and returns their sum.
-    
+    Returns the sum of all integer arguments.
+
     Parameters:
-    *args (int): The integers to be summed up.
+    *args: Integers to be added.
 
     Returns:
-    int: The sum of all the integer arguments.
-    
-    Example:
-    >>> add_integers(1, 2, 3)
-    6
-    >>> add_integers(5, 10, 15, 20)
-    50
+    int: The sum of the integers.
     """
     return sum(args)
 
-result = add_integers(1, 2, 3)
-print("Sum of numbers:", result)  
-
-result = add_integers(5, 10, 15, 20)
-print("Sum of numbers:", result)  
+print(add_integers(1, 2, 3))
+print(add_integers(10, -5, 5))
+print(add_integers(100, 200)) 
+print(add_integers())

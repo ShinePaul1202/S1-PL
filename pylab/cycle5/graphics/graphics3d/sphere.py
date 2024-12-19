@@ -2,6 +2,6 @@ def area(radius):
     from math import pi
     return 4 * pi * radius * radius
 
-def perimeter(radius):  # Perimeter doesn't apply to a sphere; return the circumference of a great circle
+def perimeter(radius):
     from math import pi
     return 2 * pi * radius
